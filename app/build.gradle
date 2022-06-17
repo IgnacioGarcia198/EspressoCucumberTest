@@ -13,7 +13,11 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.ignacio.espressocucumbertest.test.runner.CucumberTestConfig"
+
+        //testInstrumentationRunner "io.cucumber.android.runner.CucumberAndroidJUnitRunner"
+
+        //testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -42,5 +46,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     androidTestImplementation "androidx.test.espresso:espresso-intents:3.4.0"
     androidTestImplementation 'androidx.test:rules:1.4.0'
-    androidTestImplementation "androidx.test:rules:1.4.0"
+
+    androidTestImplementation 'io.cucumber:cucumber-android:4.8.3'
+    androidTestImplementation 'io.cucumber:cucumber-picocontainer:4.8.1'
+
+    //androidTestImplementation "io.cucumber:cucumber-android:4.9.0"
+    //androidTestImplementation "io.cucumber:cucumber-picocontainer:7.3.4"
 }
